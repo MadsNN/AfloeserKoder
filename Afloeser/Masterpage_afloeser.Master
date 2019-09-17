@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpage_afloeser.master.cs" Inherits="Afloeser.Masterpage_afloeser" %>
+
+<!DOCTYPE html>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<html style="height: 100%;">
+<head runat="server">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge; IE=9; IE=7,chrome=1" />
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0)" />
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0)" />
+
+    <link rel="stylesheet" type="text/css" href="Styles/StyleSheet_afloeser.css" />
+    <link rel="icon" type="image/png" href="~/images/SkbLogo_16px.png"/>
+
+    <title>Afløsersystem - Ældre/Handicap</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="height: 100%;">
+    <form id="masterForm" runat="server" style="height: 100%;">
+
+        <telerik:RadScriptManager runat="server" ID="radScriptManager_afloeserkoder" EnablePageMethods="true">
+            <Scripts>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
+            </Scripts>
+        </telerik:RadScriptManager>
+        <telerik:RadStyleSheetManager ID="radStyleSheetManagerFys" runat="server">
+        </telerik:RadStyleSheetManager>
+
+        <asp:Table ID="Table1" runat="server" Width="100%" BorderWidth="0" CssClass="tableDesign" Style="height: 99%;">
+            <asp:TableRow Height="75px">
+                <asp:TableCell HorizontalAlign="Center" Width="200px">
+                    <asp:Image ID="image" runat="server" ImageUrl="~/images/skb_logo.jpg" Width="200px" CssClass="logoPic" />
+                </asp:TableCell>
+                <asp:TableCell ColumnSpan="1" CssClass="headLine">
+                    <asp:ContentPlaceHolder ID="CPH_HeaderMainTitle" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </asp:TableCell>
+            </asp:TableRow>
+
+            <asp:TableRow>
+                <asp:TableCell CssClass="leftMarg">
+                    <asp:ContentPlaceHolder ID="CPH_LeftMarg" runat="server">
+                    </asp:ContentPlaceHolder>
+                </asp:TableCell>
+                <asp:TableCell CssClass="content">
+                    <asp:ContentPlaceHolder ID="CPH_Content" runat="server">
+                    </asp:ContentPlaceHolder>
+                </asp:TableCell>
+            </asp:TableRow>
+
+
+        </asp:Table>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Afloeser_koder" Class="DataClass_afloeserDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=svsql01;Initial Catalog=Afloeser_koder;User ID=Afloeser" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="Afloeser_koderConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AfloeserAdgang" Member="AfloeserAdgangs">
+    <Type Name="AfloeserAdgang">
+      <Column Name="MedarbejderID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ADBrugerNavn" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Fornavn" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Efternavn" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Mail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Tlfnr" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="StillingBetegnelse" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ArbejdsstedNavn" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ArbejdsstedGade" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ArbejdsstedPostnr" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ArbejdstedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LOSOrganisationsenhed" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="LOSOrganisationID" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Omraede" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OmraedeID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AfloeserBrugere" Member="AfloeserBrugeres">
+    <Type Name="AfloeserBrugere">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Navn" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Kategori" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="StartDato" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SlutDato" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CPR" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Opretter" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DeletedDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TempCode_username" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,21 @@
+﻿Sikkerhedsgruppe:
+
+        <globalization culture="da-DK" uiCulture="da-DK" />
+    <authentication mode="Windows" />
+    <authorization>
+      <allow roles="SKB\Afløserkoder Administrator" />
+      <allow roles="SKB\Afløserkoder Tjørnehaven" />
+      <allow roles="SKB\Afløserkoder Akut team Fælles nat (A&amp;T)" />
+      <allow roles="SKB\Afløserkoder Baunegården" />
+      <allow roles="SKB\Afløserkoder Bøgehaven" />
+      <allow roles="SKB\Afløserkoder Dagmargården" />
+      <allow roles="SKB\Afløserkoder Dalbogård" />
+      <allow roles="SKB\Afløserkoder Kildegården" />
+      <allow roles="SKB\Afløserkoder Møllehjørnet" />
+      <allow roles="SKB\Afløserkoder PBL" />
+      <allow roles="SKB\Afløserkoder Præstehaven" />
+      <allow roles="SKB\Afløserkoder Ryvang" />
+      <allow roles="SKB\Afløserkoder Søkilde" />
+      <allow roles="SKB\Afløserkoder Søndervang" />
+      <deny users="*" />
+    </authorization>

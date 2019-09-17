@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="LogPersondataTraek" Class="DataClass_logPersonalDataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=svsql01;Initial Catalog=LogPersondataTraek;User ID=LogPersonDataTraek_afloeserAehW" SettingsObjectName="DAL.LogPersonalData.Properties.Settings" SettingsPropertyName="LogPersondataTraekConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="afloeser.LogAfloeserAeH" Member="LogAfloeserAeHs">
+    <Type Name="LogAfloeserAeH">
+      <Column Name="systemID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="samaccountName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="dataAccessed" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="reasonForAccessingData" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="dataAccessedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,284 @@
+﻿body {
+}
+
+.tableDesign {
+    font-family: Arial;
+}
+
+.innerTableDesign {
+    vertical-align: top;
+    border: 5px solid #F2F2F2;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px lightgray;
+}
+
+.tableCellDesign {
+    /*border: hidden;
+    border-color: white;
+    border-style: solid;*/
+    /*border-collapse: collapse;*/
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+    border-top-style: none;
+    border: hidden;
+}
+
+.headLine {
+    background-color: #797d72;
+    text-align: center;
+    vertical-align: middle;
+    font-size: xx-large;
+    color: white;
+    border: hidden;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: -webkit-linear-gradient(left top, rgb(121, 125, 114), rgb(87,89,81));
+    background: -o-linear-gradient(bottom right,rgb(121, 125, 114), rgb(87,89,81));
+    background: -moz-linear-gradient(bottom right, rgb(121, 125, 114), rgb(87,89,81));
+    background: linear-gradient(to bottom right, rgb(121, 125, 114), rgb(87,89,81));
+}
+
+.leftMarg {
+    background-color: #e8f7e8;
+    width: 100px;
+    vertical-align: top;
+    vertical-align: text-top;
+    color: #003359;
+    font-weight: 700;
+    border: hidden;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background: -webkit-linear-gradient(left top, rgb(186, 186, 186), rgb(242,242,242));
+    background: -o-linear-gradient(bottom right,rgb(186, 186, 186), rgb(242,242,242));
+    background: -moz-linear-gradient(bottom right, rgb(186, 186, 186), rgb(242,242,242));
+    background: linear-gradient(to bottom right, rgb(186, 186, 186), rgb(242,242,242));
+}
+
+.content {
+    vertical-align: top;
+    vertical-align: text-top;
+    color: #616161; /*#FCFCFC;*/
+    border: hidden;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #FCFCFC;
+    width: 85%;
+}
+
+.bottom {
+    background-color: #797d72;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    border: hidden;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+imageStyle {
+    max-height: 100px;
+    max-width: 150px;
+}
+
+.formHeadLines {
+    text-align: center;
+    vertical-align: central;
+    font-size: large;
+    /*column-span: all;*/
+    border-right: thin;
+    border-right-style: solid;
+    border-left: none;
+    border-left-style: none;
+    border-color: white;
+    /*border-style: solid;*/
+    border-collapse: collapse;
+    -webkit-column-span: all;
+}
+
+.checkBoxChecked {
+    icon: url(checked.jpg);
+}
+
+.rowColorOne {
+    background-color: #E9EEF0;
+    /*background: -webkit-linear-gradient(left top, #eeeeee, rgb(247,247,247));
+    background: -o-linear-gradient(bottom right,#eeeeee, rgb(247,247,247));
+    background: -moz-linear-gradient(bottom right, #eeeeee, rgb(247,247,247));
+    background: linear-gradient(to bottom right, #eeeeee, rgb(247,247,247));*/
+}
+
+.rowColorTwo {
+    background-color: #F7F9FA;
+}
+
+.CellStyleBlankCell {
+    background-color: #F7F9FA;
+}
+
+.updateImage {
+    /*background: url(Refresh.jpg);*/
+    background-position: 0 0;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+}
+
+
+
+
+.controlStyle {
+    background-color: #EEF6F8;
+}
+
+.loggedOnBox {
+    background-color: #ffb519;
+    opacity: 0.7;
+    filter: Alpha(opacity=50);
+    text-align: center;
+    font-size: x-small;
+    color: #797d72;
+    width: 200px;
+    font-weight: 500;
+    border: hidden;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.logOutBox {
+    background-color: #797d72;
+    opacity: 0.7;
+    filter: Alpha(opacity=50);
+    text-align: center;
+    font-size: x-small;
+    color: white;
+    width: 200px;
+    font-weight: 500;
+    border: hidden;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+.textLeftAlign {
+    text-align: left;
+    font-size: x-small;
+}
+
+
+.linkButton {
+    cursor: pointer;
+}
+
+.fontStyle {
+    font-size: small;
+    font-style: italic;
+}
+
+.divOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background-color: Black;
+    opacity: .25;
+}
+
+.divPopup {
+    position: absolute;
+    padding-top: 20%;
+    top: 12%;
+    left: 20%;
+    right: 10%;
+    bottom: 12%;
+    vertical-align: middle;
+    vertical-align: text-bottom;
+    background-color: #ffb519;
+    z-index: 999;
+    vertical-align: middle;
+    text-align: center;
+    color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+    align-content: center;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    opacity: .5;
+}
+
+.scheduleBox {
+    opacity: 0.8;
+    background-color: #F7F7F7;
+    vertical-align: top;
+    border: none;
+    padding: 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px lightgray;
+    width: 95%;
+    margin: 10px;
+}
+
+.tableRowEven {
+    background-color: #D4D4D4;
+    opacity: 0.85;
+    filter: Alpha(opacity=50);
+    text-align: center;
+    font-size: x-small;
+    color: #282828;
+    width: 100%;
+    font-weight: 500;
+    border: hidden;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    /*overflow: hidden;*/
+    /*vertical-align: middle;
+    text-align: center;*/
+    padding: 2px;
+    margin: 2px;
+}
+
+.leftMargTableCell {
+    padding: 5px;
+}
+
+.radalert
+{
+    background-image: none !important;
+}
